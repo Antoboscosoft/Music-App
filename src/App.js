@@ -1,12 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+// import { Link, Route, BrowserRouter as Router, Routes, Switch } from 'react-router-dom';
+import { Link, Route, HashRouter as Router, Routes, Switch } from 'react-router-dom';
+import MusicPlayer from './component/MusicPlayer';
+import Home from './component/Home';
+import Dashboard from './component/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Music App...
-        {/* <img src={logo} className="App-logo" alt="logo" />
+    <Router>
+      <div className="App">
+        {/* <Switch> */}
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+          <Route path='/music-player' element={<MusicPlayer />}></Route>
+          <Route path='/dashboard' element={<Dashboard />}></Route>
+        </Routes>
+        {/* </Switch> */}
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+{/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,9 +42,3 @@ function App() {
         >
           Learn React
         </a> */}
-      </header>
-    </div>
-  );
-}
-
-export default App;
