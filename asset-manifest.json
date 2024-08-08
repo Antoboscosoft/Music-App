@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Music-App/static/css/main.72473f3f.css",
-    "main.js": "/Music-App/static/js/main.e7a97399.js",
+    "main.js": "/Music-App/static/js/main.c61668da.js",
     "static/js/885.57aa3e8f.chunk.js": "/Music-App/static/js/885.57aa3e8f.chunk.js",
     "static/js/453.9feb08e2.chunk.js": "/Music-App/static/js/453.9feb08e2.chunk.js",
     "static/media/Kana-Kangiren.mp3": "/Music-App/static/media/Kana-Kangiren.3c02c685e93f5174733b.mp3",
@@ -19,12 +19,12 @@
     "static/media/logo.svg": "/Music-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Music-App/index.html",
     "main.72473f3f.css.map": "/Music-App/static/css/main.72473f3f.css.map",
-    "main.e7a97399.js.map": "/Music-App/static/js/main.e7a97399.js.map",
+    "main.c61668da.js.map": "/Music-App/static/js/main.c61668da.js.map",
     "885.57aa3e8f.chunk.js.map": "/Music-App/static/js/885.57aa3e8f.chunk.js.map",
     "453.9feb08e2.chunk.js.map": "/Music-App/static/js/453.9feb08e2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72473f3f.css",
-    "static/js/main.e7a97399.js"
+    "static/js/main.c61668da.js"
   ]
 }
