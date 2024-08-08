@@ -1,25 +1,30 @@
 {
   "files": {
-    "main.css": "/Music-App/static/css/main.062931b5.css",
-    "main.js": "/Music-App/static/js/main.48e954b0.js",
+    "main.css": "/Music-App/static/css/main.72473f3f.css",
+    "main.js": "/Music-App/static/js/main.4e9c3f5f.js",
     "static/js/885.57aa3e8f.chunk.js": "/Music-App/static/js/885.57aa3e8f.chunk.js",
     "static/js/453.9feb08e2.chunk.js": "/Music-App/static/js/453.9feb08e2.chunk.js",
     "static/media/Kana-Kangiren.mp3": "/Music-App/static/media/Kana-Kangiren.3c02c685e93f5174733b.mp3",
     "static/media/Vena-Vena.mp3": "/Music-App/static/media/Vena-Vena.bf19c43aa4b274143dc9.mp3",
     "static/media/Orasaadha-Usurathan-MassTamilan.com.mp3": "/Music-App/static/media/Orasaadha-Usurathan-MassTamilan.com.7066a5561042b6389406.mp3",
+    "static/media/Come Back Indian.mp3": "/Music-App/static/media/Come Back Indian.6d4a8805ca37dbb404f1.mp3",
     "static/media/Nee-Podhum-Enaku-MassTamilan.dev.mp3": "/Music-App/static/media/Nee-Podhum-Enaku-MassTamilan.dev.bb162ab9c247b88fb2f6.mp3",
+    "static/media/Marana-Mass-MassTamilan.org.mp3": "/Music-App/static/media/Marana-Mass-MassTamilan.org.7da306208948bdad7f9d.mp3",
+    "static/media/join-pic.jpg": "/Music-App/static/media/join-pic.377c6c08cb482345d9ba.jpg",
+    "static/media/bgimglogin.jpg": "/Music-App/static/media/bgimglogin.4df1a78bcecdcca8bc3c.jpg",
     "static/media/Joseph Aldrin.png": "/Music-App/static/media/Joseph Aldrin.a734ae7aceaef671d4f9.png",
+    "static/media/profile-picture1.jpg": "/Music-App/static/media/profile-picture1.9e154c9cf133be138799.jpg",
     "static/media/Benny Joshua.jpg": "/Music-App/static/media/Benny Joshua.ba3f1bb090d3859c497e.jpg",
     "static/media/Timothy Sharan.jpg": "/Music-App/static/media/Timothy Sharan.96988478cd735ab3bd39.jpg",
     "static/media/logo.svg": "/Music-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Music-App/index.html",
-    "main.062931b5.css.map": "/Music-App/static/css/main.062931b5.css.map",
-    "main.48e954b0.js.map": "/Music-App/static/js/main.48e954b0.js.map",
+    "main.72473f3f.css.map": "/Music-App/static/css/main.72473f3f.css.map",
+    "main.4e9c3f5f.js.map": "/Music-App/static/js/main.4e9c3f5f.js.map",
     "885.57aa3e8f.chunk.js.map": "/Music-App/static/js/885.57aa3e8f.chunk.js.map",
     "453.9feb08e2.chunk.js.map": "/Music-App/static/js/453.9feb08e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.062931b5.css",
-    "static/js/main.48e954b0.js"
+    "static/css/main.72473f3f.css",
+    "static/js/main.4e9c3f5f.js"
   ]
 }
