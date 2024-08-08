@@ -12,6 +12,14 @@ function Home() {
         navigate('/dashboard');
     }
 
+    const goToMusicPlayer = () => {
+        navigate('/music-player1');
+    }
+
+    const goToMusic = () => {
+        navigate('/music');
+    }
+
     return (
         <div className='home d-flex flex-row vh-100'>
             <div className='sidebar bg-dark d-flex flex-column align-items-center justify-content-center p-3 text-light' style={{ width: '15%', height: '100vh', maxHeight: '100vh' }}>
@@ -23,6 +31,12 @@ function Home() {
                 </div>
                 <div className='d-flex align-items-center justify-content-center'>
                     <button className='btn btn-primary' onClick={() => goToDashboard()}>Dashboard</button>
+                </div>
+                <div className='d-flex align-items-center justify-content-center mt-3'>
+                    <button className='btn btn-primary' onClick={() => goToMusicPlayer()}>Music Player</button>
+                </div>
+                <div className='d-flex align-items-center justify-content-center mt-3'>
+                    <button className='btn btn-primary' onClick={() => goToMusic()}>Music </button>
                 </div>
             </div>
             <div className='d-flex flex-column' style={{ width: '85%', height: '100vh', maxHeight: '100vh', overflow: 'hidden' }}>
