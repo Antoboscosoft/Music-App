@@ -15,7 +15,7 @@ const MainPage = () => {
     return (
         <div className='d-flex flex-wrap justify-content-center '>
             <img src={mainbackground} alt="mainbackground" className='img-fluid' />
-            <div className='position-absolute top-50 start-50 translate-middle text-light text-center mb-5 mt-5 ' onClick={() => NavToLogin()}>Nav To Login</div>
+            <div className='main_text' onClick={() => NavToLogin()}>Nav To Login</div>
             {/* {trackNames.map((trackName, index) => (
                 <div key={index} className='col-md-3 mb-4'>
                     <div className='album-item card' onClick={() => selectTrack(index)}>

@@ -76,3 +76,35 @@
   justify-content: center;
   color: white;
 }
+
+/* mainPage style */
+.main_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  /* font-family: 'Raleway', sans-serif; */
+  /* text-decoration: none; */
+}
+
+.main_text:hover {
+  transform: scale(1.1);
+  color: #5480d8;
+  text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 70px yellow, 0 0 80px yellow, 0 0 100px yellow, 0 0 150px yellow;
+  text-decoration: none;
+
+}

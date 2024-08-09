@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import '../assert/stylesheets/Playlist.css'
 
 function Playlists() {
     return (
         <div>
-            <div class="container">
+            <div class="container-playlist">
                 <div class="row">
                     <div class="col-md-3">
 
