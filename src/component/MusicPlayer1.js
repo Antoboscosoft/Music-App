@@ -111,6 +111,7 @@ function MusicPlayer1() {
     }
 
     return (
+        <>
         <div className='music-player'>
             {/* <div className='top-bar'>
                 <nav className="navbar navbar-expand navbar-dark bg-dark">
@@ -221,18 +222,20 @@ function MusicPlayer1() {
                                     </li>
                                 </ul>
                             </div>
-                             <div className='profile_icon'>
-                            <button className="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" style={{ border: 'none' }}>
-                                <img src={img1} alt='profile' className='profile rounded-circle' style={{ width: '40px', height: '40px' }} />
-                            </button>
-                            <ul className='dropdown-menu dropdown-menu-end' aria-labelledby='profileDropdown'>
-                                <li><Link to='/login' className='dropdown-item'>Logout</Link></li>
-                                <li><a className='dropdown-item'>Settings</a></li>
-                                <li><a className='dropdown-item'>Profile</a></li>
-                            </ul>
-                        </div>
+                            <div className='profile_icon'>
+                                <p className='profile_name mb-4 me-2'>{localStorage.getItem('loggedInUser')}</p>
+
+                                <button className="btn btn-outline-light dropdown-toggle" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" style={{ border: 'none' }}>
+                                    <img src={img1} alt='profile' className='profile rounded-circle' style={{ width: '40px', height: '40px' }} />
+                                </button>
+                                <ul className='dropdown-menu dropdown-menu-end' aria-labelledby='profileDropdown'>
+                                    <li><Link to='/login' className='dropdown-item'>Logout</Link></li>
+                                    <li><a className='dropdown-item'>Settings</a></li>
+                                    <li><a className='dropdown-item'>Profile</a></li>
+                                </ul>
+                            </div>
                         </nav>
-                       
+
                         <Outlet />
                     </div>
 
@@ -241,6 +244,7 @@ function MusicPlayer1() {
             </MusicPlayerProvider>
 
         </div>
+        </>
     )
 }
 

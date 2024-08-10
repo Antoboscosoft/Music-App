@@ -25,7 +25,7 @@ function Login() {
     const { register: registerLogin, handleSubmit: handleLoginSubmit, formState: { errors: loginErrors } } = useForm({
         resolver: yupResolver(validationSchema)
     });
-    const { register: registerRegister, handleSubmit: handleRegisterSubmit, formState: { errors: registerErrors } } = useForm({
+    const { register: registerRegister, handleSubmit: handleRegisterSubmit, formState: { errors: registerErrors }, reset: resetRegister } = useForm({
         resolver: yupResolver(registrationSchema)
     });
 
@@ -51,6 +51,7 @@ function Login() {
 
             // Handle successful login (e.g., save token, redirect)
             localStorage.setItem('token', response?.data?.token);
+            localStorage.setItem("loggedInUser", data?.username);
             Swal.fire({
                 icon: 'success',
                 title: 'Login Successful',
@@ -78,7 +79,8 @@ function Login() {
         try {
             const response = await registerUser(data);
             console.log("Registration Success: ", response);
-            if(response == "User created successfully!") {
+            if(response === "User created successfully!") {
+                resetRegister();
             navigate('/login');
             }
             // Handle successful login (e.g., save token, redirect)
@@ -106,6 +108,12 @@ function Login() {
         }
     }
 
+    const handleFormKeyDown = (event) => {
+        if(event.key === 'Enter') {
+            event.preventDefault(); // Prevent form submission on key press
+        }
+    }
+
     // function switchCard() {
     const switchCard = () => {
         var checkbox = document.querySelector('.checkbox');
@@ -115,7 +123,7 @@ function Login() {
     return (
         <div className=''>
             <div className='d-flex justify-content-center align-items-center mt-5 p-2 login-form'>
-                <form onSubmit={handleLoginSubmit(onLoginSubmit)}>
+                <form onSubmit={handleLoginSubmit(onLoginSubmit)} onKeyDown={handleFormKeyDown}>
 
                     {/* <h2 className='login-title me-5'>Login</h2> */}
                     {/* <div className='form-group mb-3 mt-3 p-2'>
@@ -188,7 +196,7 @@ function Login() {
                                                                 {loginErrors?.password && <div>{loginErrors?.password.message}</div>}
                                                             </div>
                                                             {/* <a href="#" class="btn mt-4">submit</a> */}
-                                                            <button type='submit' className='zoom-button btn btn-outline-primary'>Login</button>
+                                                            <button type='submit' className='zoom-button btn1 btn-outline-primary'>Login</button>
                                                             <div className='d-flex justify-content-center'>
                                                                 <p className='text-white'>Don't have an account ? &nbsp;</p>
                                                                 <p class="mb-0 text-center"><a class="link" onClick={switchCard}> Sign Up</a></p>
@@ -202,7 +210,7 @@ function Login() {
                                                         <div class="section text-center">
                                                             <h4 class="mt-4 pb-0 text-white">Sign Up</h4>
                                                             <div>
-
+                                                            {/* <form onSubmit={handleRegisterSubmit(onRegisterSubmit)} onKeyDown={handleFormKeyDown}> */}
                                                                 <div class="form-group">
                                                                     <input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="logname" autocomplete="off"  {...registerRegister('fullName')} />
                                                                     {registerErrors?.name && <div>{registerErrors.name.message}</div>}
@@ -224,11 +232,13 @@ function Login() {
                                                                     {registerErrors.password && <div>{registerErrors.password.message}</div>}
                                                                     <i class="input-icon uil uil-lock-alt"></i>
                                                                 </div>
-                                                                <button type='button' onClick={handleRegisterSubmit(onRegisterSubmit)} class="btn mt-4">submit1</button>
+                                                                {/* <button type='submit' className='btn mt-4'>Register</button> */}
+                                                                <button type='button' onClick={handleRegisterSubmit(onRegisterSubmit)} class="btn1 mt-4">submit1</button>
                                                                 <div className='d-flex justify-content-center'>
                                                                     <p className='text-white'>If you have an account ? &nbsp;</p>
                                                                     <p class="mt-0 text-center"><a class="link" onClick={switchCard}> Sign In</a></p>
                                                                 </div>
+                                                                {/* </form> */}
                                                             </div>
                                                         </div>
                                                     </div>
